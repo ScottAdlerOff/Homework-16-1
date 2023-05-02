@@ -1,11 +1,10 @@
 public class Main {
-    public class Bicycle {
-
-        public String modelName;
-        public int wheelsCount;
-
-        public void updateTyre() {
-            System.out.println("Меняем покрышку");
-        }
+    public static void main(String[] args) {
+        Bicycle bicycle = new Bicycle("MyBike", 2);
+        int wheelsCount = bicycle.getWheelsCount();
+        String modelName = bicycle.getModelName();
+        bicycle.setWheelsCount(3);
+        bicycle.setModelName("NewBike");
+        bicycle.updateTyre();
     }
 }
